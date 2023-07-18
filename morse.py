@@ -24,10 +24,8 @@ class Solution:
                 if message[i] == " ":
                     newString += "  "
                     continue 
-                if message[i+1] == " ":
-                     newString += MORSE_CODE_DICT.get(message[i])
-                else: 
-                    newString += MORSE_CODE_DICT.get(message[i]) + " "
+
+                newString += MORSE_CODE_DICT.get(message[i]) + " "
 
             return newString 
             pass
