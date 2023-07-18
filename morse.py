@@ -22,7 +22,7 @@ class Solution:
             for i in range(len(message)):
                 message = message.upper()
                 if message[i] == " ":
-                    newString += "  "
+                    newString += " "
                     continue 
 
                 newString += MORSE_CODE_DICT.get(message[i]) + " "
