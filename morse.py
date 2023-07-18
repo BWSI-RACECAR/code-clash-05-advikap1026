@@ -26,6 +26,8 @@ class Solution:
                     continue 
 
                 newString += MORSE_CODE_DICT.get(message[i]) + " "
+            
+            newString = newString.strip()
 
             return newString 
             pass
