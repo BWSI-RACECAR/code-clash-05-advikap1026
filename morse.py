@@ -20,6 +20,7 @@ class Solution:
                     '/':'-..-.', '-':'-....-', '(':'-.--.', ')':'-.--.-'}
             newString = ""
             for i in range(len(message)):
+                message = message.upper()
                 if message[i] == " ":
                     newString += "  "
                     continue 
